@@ -270,6 +270,10 @@ section {
     color: var(--main-color);
 }
 
+.home .content p span {
+    color: var(--main-color);
+}
+
 .home .content p {
     color: var(--text-color-1);
     font-size: var(--smal-fontsize);
@@ -288,8 +292,8 @@ section {
 
 .about .row .img-box {
     justify-content: center;
-    flex: 1 1 40rem;
-    padding: 0rem;
+    flex: 1 1 10rem;
+    padding: 1rem;
 }
 
 .about .row .img-box img {
@@ -299,8 +303,8 @@ section {
 }
 
 .about .row .content-box {
-    flex: 1 1 40rem;
-    padding: 1.5rem;
+    flex: 1 1 30rem;
+    padding: 1rem;
 }
 
 .about .row .content-box h3{
@@ -310,9 +314,8 @@ section {
 
 .about .row .content-box p {
     margin: 2rem 0rem;
-    font-size: var(--text-color-2);
+    font-size: var(--smal-fontsize);
     color: var(--text-color-2);
-
 }
 /* About section: End */
 
@@ -323,12 +326,13 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
+    padding: 1rem;
 }
 
 .services .box-container .box {
-    flex: 1 1 35rem;
+    flex: 1 1 50rem;
     box-shadow: var(--box-shadow);
-    padding: 2.5rem;
+    padding: 3.5rem;
     border-radius: 0.5rem;
     position: relative;
     cursor: pointer;
@@ -372,9 +376,6 @@ section {
     font-size: 1.4rem;
     line-height: 1.5rem;
 }
-
-
-
 /* Services section: End */
 
 /* Media: Start */
