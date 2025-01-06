@@ -30,7 +30,7 @@ img {
 }
 
 & {
-    --main-color: springgreen;
+    --main-color: darkred;
     --bg-color-1: #222;
     --bg-color-2: #111;
     --text-color-1: #eee;
@@ -247,7 +247,7 @@ section {
     align-items: center;
     padding-top: 8rem;
     background: linear-gradient(rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8)), url(img/teamwork-makes-the-dream-work.jpg) 
+    rgba(0, 0, 0, 0.8)), url(img/homepageimp.jpg) 
     center/cover no-repeat;
 }
 
@@ -287,8 +287,9 @@ section {
 }
 
 .about .row .img-box {
+    justify-content: center;
     flex: 1 1 40rem;
-    padding: 1.5rem;
+    padding: 0rem;
 }
 
 .about .row .img-box img {
@@ -344,7 +345,7 @@ section {
     right: 2.5rem;
     font-size: 6rem;
     color: var(--text-color-2);
-    font-weight: 800;
+    font-weight: 500;
     opacity: 0.3;
 }
 
