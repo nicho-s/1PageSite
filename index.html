@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang = 'en'> 
+    <head>
+        <meta charset = "UTF-8">
+        <title>Trying</title>
+    
+        <!--- custom styles --->
+        <link rel="stylesheet" href="style.css">
+    
+        <!--- font links --->
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+        
+        <!-- fontawasome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    </head>
+    
+    <body>
+        <!-- start: header section -->
+        <section class="header">
+            <a href="#" class="logo">Trying Co.</a>
+
+            <div class="icons">
+                <!-- ico for changing dark/wite themes -->
+                <div class="fa-regular fa-sun" id="theme-btn"></div>
+                <div class="fas fa-palette" id="color-btn"></div>
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+
+            
+            <nav class="navbar">
+                <!-- links -->
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#services">services</a>
+                <a href="#projects">projects</a>
+                <a href="#pricing">pricing</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </nav>
+
+            <form action="#" class="search-form">
+                <input type="search" name="search" id="search-box" placeholder="search..." autocomplete="off">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="colors-palette">
+                <h4>Choose color</h4>
+                <div class="colors">
+                    <div class="color" style="background: springgreen;"></div>
+                    <div class="color" style="background: orangered;"></div>
+                    <div class="color" style="background: dodgerblue;"></div>
+                    <div class="color" style="background: darkviolet;"></div>
+                    <div class="color" style="background: darkcyan;"></div>
+                    <div class="color" style="background: aqua;"></div>
+                </div>
+            </div> 
+        </section>
+        <!-- end: header section -->
+
+        <!-- start: home section -->
+        <section class="home" id="home">
+            <div class="content">
+                <h2><span>Web Design</span> Company</h2>
+                <p>Bushido is the way of warrior, the codex of Samurai during feudal Japan 
+                    which promoted the importance of loyalty, honor and martial arts. The Bushido 
+                    philosophy refers to not fearing death and dying for valor. 
+                    It is sometimes criticized for disrespecting human life.</p>
+                <a href="#services" class="btn">Learn more</a>
+            </div>
+        </section>
+        <!-- end: home section -->
+
+        <!-- start: about section -->
+        <section class="about" id="about">
+            <h4 class="heading"><span>About</span> company</h4>
+
+            <div class="row">
+                <div class="img-box">
+                    <img src="img/about-pic-cropped-for-home.webp">
+                </div>
+                <div class="content-box">
+                    <h3>Web Design Company</h3>
+                    <p>is a forward-thinking web design agency dedicated to creating stunning, 
+                        user-friendly, and high-performance websites. 
+                        With a team of creative designers and skilled developers, we specialize in 
+                        crafting tailor-made digital solutions for businesses of all sizes.</p>
+                    <p>Our services include responsive website design, e-commerce platforms, 
+                        and brand identity development, all aimed at boosting your online presence. 
+                        At Elevate Web Studio, we blend innovation with functionality, ensuring every project reflects 
+                        our clients' unique visions while delivering exceptional user experiences. 
+                        Let us bring your ideas to life and elevate your brand!</p>
+                    <a href="#contact" class="btn">Contact us</a>
+                </div>
+            </div>
+        </section>
+        <!-- end: about section -->
+
+
+        <!-- start: services section -->
+        <section class="services" id="services">
+            <h4 class="heading"> Our <span>Services</span></h4>
+
+            <div class="box-container">
+                <div class="box">
+                    <span>01</span>
+                    <i class="fas fa-pen-nib"></i>
+                    <h3>Web Design</h3>
+                    <p>Some horrible bullshit</p>
+                </div>
+                <div class="box">
+                    <span>02</span>
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Some horrible bullshit</p>
+                </div>
+                <div class="box">
+                    <span>03</span>
+                    <i class="fas fa-mobile"></i>
+                    <h3>Responsive Mobile Design</h3>
+                    <p>Some horrible bullshit</p>
+                </div>
+                <div class="box">
+                    <span>04</span>
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Marketing</h3>
+                    <p>Some horrible bullshit</p>
+                </div>
+                <div class="box">
+                    <span>05</span>
+                    <i class="fas fa-school"></i>
+                    <h3>Web Design Education</h3>
+                    <p>Some horrible bullshit</p>
+                </div>
+                <div class="box">
+                    <span>06</span>
+                    <i class="fas fa-circle-info"></i>
+                    <h3>Support 24/7</h3>
+                    <p>Some horrible bullshit</p>
+                </div>
+            </div>
+            
+        </section>
+        <!-- end: services section -->
+
+        <!-- start: script section -->
+        <script>
+            let menuBtn = document.querySelector('#menu-btn');
+            let searchBtn = document.querySelector('#search-btn');
+            let colorBtn = document.querySelector('#color-btn');
+            let themeBtn = document.querySelector('#theme-btn');
+
+            let navbar = document.querySelector('.navbar');
+            let searchForm = document.querySelector('.search-form');
+            let colorPallete = document.querySelector('.colors-palette');
+
+            menuBtn.onclick = () => {
+                navbar.classList.toggle('active');
+                searchForm.classList.remove('active');
+                colorPallete.classList.remove('active');
+            }
+
+            searchBtn.onclick = () => {
+                searchForm.classList.toggle('active');
+                navbar.classList.remove('active');
+                colorPallete.classList.remove('active');
+            }
+
+            colorBtn.onclick = () => {
+                colorPallete.classList.toggle('active');
+                searchForm.classList.remove('active');
+                navbar.classList.remove('active');
+            }
+
+            window.onscroll = () => {
+                navbar.classList.remove('active');
+                searchForm.classList.remove('active');
+                colorPallete.classList.remove('active');
+            }
+
+            document.querySelectorAll('.colors-palette .color').forEach(btn => {
+                btn.onclick = () => {
+                    let color = btn.style.background;
+                    document.querySelector('&').style.setProperty('--main-color', color);
+                }
+            })
+
+            themeBtn.onclick = () => {
+                themeBtn.classList.toggle('fa-moon');
+                if(themeBtn.classList.contains('fa-moon')){
+                    document.body.classList.add('active');
+                } else {
+                    document.body.classList.remove('active');
+                }
+            }
+        </script>
+        <!-- end: script section -->
+    </body>
+</html>
