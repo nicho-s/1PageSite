@@ -40,6 +40,8 @@ img {
     --big-fontsize: calc(30px + (75 - 30) * ((100vw - 300px) / (1500 - 300)));
     --med-fontsize: calc(16px + (35 - 16) * ((100vw - 300px) / (1500 - 300)));
     --smal-fontsize: calc(12px + (18 - 12) * ((100vw - 300px) / (1500 - 300)));
+
+    --font-logo: 
 }
 
 body {
@@ -85,6 +87,17 @@ section {
     color: var(--main-color);
 }
 
+@font-face {
+    font-family: "Tesla";
+    src: url(./fonts/TESLA.ttf) format("truetype");
+    font-style: normal;
+    font-display: swap; 
+}
+
+.custom-face {
+    font-family: "Tesla", Arial, sans-serif;
+}
+
 /* Heder section: Start */
 .header {
     position: fixed;
@@ -104,6 +117,7 @@ section {
 .header .logo {
     font-size: var(--med-fontsize);
     font-weight: 800;
+    font-family: "Tesla", sans-serif;
     color: var(--text-color-2);
 }
 
@@ -268,6 +282,7 @@ section {
 
 .home .content h2 span {
     color: var(--main-color);
+    font-family: 'Tesla', sans-serif;
 }
 
 .home .content p span {
